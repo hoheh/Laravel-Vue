@@ -1,15 +1,37 @@
 <template>
-  <div>
-    Приветики
-  </div>
+	<div class="content">
+		<p>{{ title }}</p>
+	</div>
 </template>
 
 <script>
+
 export default {
-  name: "Main",
+	name: "Main",
+	props: {
+		title: {
+			type: String,
+		},
+	},
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+.app {
+	padding: 20px 0;
+
+	.header {
+		.logo {
+			display: flex;
+
+			&__title {
+				&-citizen {
+
+				}
+			}
+		}
+	}
+
+}
 
 </style>
